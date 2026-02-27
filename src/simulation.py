@@ -68,6 +68,11 @@ class Simulation:
     def run(self, num_weeks):
         for week in range(num_weeks):
             self.run_week(week)
+        print("\n--- Simulation Summary ---")
+        for org in self.organizations:
+            print(f"{org.name}: Treasury=${org.treasury}, Members={len(org.members)}, Territories={len(org.territories)}")
+        for relation in self.relationships:
+            print(f"{relation.org_a.name} & {relation.org_b.name}: {relation.state} | History: {relation.history}")
 
     def run_week(self, week):
         for organization in self.organizations:
