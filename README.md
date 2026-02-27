@@ -8,40 +8,54 @@ A discrete-time, agent-based simulation of territorial competition between crimi
 
 This simulation models 6-8 autonomous organizations competing for control of approximately 60 street-level territories and high-value key assets. Organizations make reasoned decisions about expansion, recruitment, rackets, and inter-organizational relations while managing law enforcement "heat".
 
-# Core Systems
+# Project Status
 
-- **Territory:** Street-level holdings and key assets; organized into neighborhoods
-- **Economy:** Three racket types (protection, gambling, smuggling) with various conditions and multipliers
-- **Members:** Individuals with loyalty, skill, and role attributes
-- **Heat:** Law enforcement pressure modeled as an environmental constraint
-- **Inter-Organization Relations:** Markov chain state transitions representing everything from alliance to war
+- Entity classes Member, Territory, Organization, Racket, Relationship
+- Markov chain transition system for relationship dynamics
+- Weighted stochastic decision model for AI behavior
+- Basic simulation loop running weekly cycles with action and relationship components
 
-# Technical Details
+# To do
 
-- **Language:** Python 3
-- **Simulation Type:** Discrete-time, agent-based
-- **Main Models:** Markov chain state transitions, weighted stochastic decision model, probabilistic conflict resolution
+- Combat resolution system
+- Event system
+- Full five-phase weekly loop
+- Interactive player mode
+- Economy, intel phases
+- Member allocation across territories
+- Police raids
+- City map
+- Racket (key asset) multipliers
+- Data visualization
+
+# Changes from M1
+
+- Simplified initial setup with basic simulation loop and only 3 starting organizations.
+- Changed 'is_alive', 'is_arrested', 'experience', 'stationed_at' to defaults instead of required "Member" parameters.
+- Dropped 'is_at_war' method from "Relationship", given 'state' captures it.
+- Instead of "Racket" determining its own operational status, made 'is_operational' a simple boolean flag.
+- Changed 'members' and 'territories' to empty lists in "Organization" instead of required parameters.
+
+# Installation
+
+- Python 3 required
+- No external dependencies
+- To test: clone repo, run python src/main.py
 
 # Project Structure
 ```
-├── src/
-│   ├── simulation.py
-│   ├── city.py
-│   ├── organization.py
-│   ├── member.py
-│   ├── territory.py
-│   ├── racket.py
-│   ├── relationship.py
-│   ├── combat.py
-│   ├── ai_engine.py
-│   └── events.py
-├── data/
-│   └── (simulation output logs)
-├── docs/
-│   └── (submissions)
-├── tests/
-│   └── (unit tests)
-└── README.md
+src/
+  models/
+    member.py
+    territory.py
+    organization.py
+    racket.py
+    relationship.py
+  systems/
+    markov_transitions.py
+    ai_decision_engine.py
+  simulation.py
+  main.py
 ```
 
 # Author
