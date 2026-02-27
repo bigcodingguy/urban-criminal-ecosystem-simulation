@@ -58,6 +58,10 @@ src/
   main.py
 ```
 
+# Acknowledgement
+
+AI was used as a limited aid for debugging assistance and understanding concepts and syntax as per the course AI use policy.
+
 # Author
 
 Blake Hammontree - Kennesaw State University, Department of Computer Science
