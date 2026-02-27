@@ -1,5 +1,6 @@
 from models.member import Member
 from models.territory import Territory
+from models.racket import Racket
 
 class Organization:
     def __init__(self, name, treasury, heat, hq, leader, personality):

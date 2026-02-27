@@ -1,5 +1,3 @@
-import random
-
 class Racket:
     def __init__(self, type, base_income, heat_generated):
         self.type = type
