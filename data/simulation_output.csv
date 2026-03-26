@@ -1,0 +1,121 @@
+Week,Organization,Treasury,Members,Territories,Heat,Active
+0,Sabini's Gang,1331,5,1,0,True
+0,Peaky Blinders,1725,5,2,0,True
+0,The Camden Boys,2026,6,1,0,True
+0,The Iron Hand,2948,5,2,0,True
+0,Kimber's Boys,2310,6,1,0,True
+0,Solomon's Bakery,2183,5,1,0,True
+1,Sabini's Gang,1410,5,1,0,True
+1,Peaky Blinders,1726,5,2,0,True
+1,The Camden Boys,2044,7,1,0,True
+1,The Iron Hand,2954,4,2,0,True
+1,Kimber's Boys,2333,6,1,0,True
+1,Solomon's Bakery,2205,5,1,0,True
+2,Sabini's Gang,1489,5,1,0,True
+2,Peaky Blinders,1791,5,2,0,True
+2,The Camden Boys,2052,8,1,0,True
+2,The Iron Hand,2970,5,2,0,True
+2,Kimber's Boys,2431,6,1,0,True
+2,Solomon's Bakery,2227,5,1,0,True
+3,Sabini's Gang,1568,4,1,0,True
+3,Peaky Blinders,1856,5,2,0,True
+3,The Camden Boys,2050,8,1,0,True
+3,The Iron Hand,2976,5,3,0,True
+3,Kimber's Boys,2580,7,1,0,True
+3,Solomon's Bakery,2249,4,1,0,True
+4,Sabini's Gang,1657,4,1,0,True
+4,Peaky Blinders,1989,4,2,0,True
+4,The Camden Boys,2048,8,1,0,True
+4,The Iron Hand,2982,5,4,0,True
+4,Kimber's Boys,2719,7,2,0,True
+4,Solomon's Bakery,2362,4,2,0,True
+5,Sabini's Gang,1746,2,1,0,True
+5,Peaky Blinders,2132,4,2,0,True
+5,The Camden Boys,2126,8,1,0,True
+5,The Iron Hand,2988,5,5,0,True
+5,Kimber's Boys,2858,8,2,0,True
+5,Solomon's Bakery,2475,4,2,0,True
+6,Sabini's Gang,1855,2,1,0,True
+6,Peaky Blinders,2275,4,2,0,True
+6,The Camden Boys,2204,7,1,0,True
+6,The Iron Hand,2994,5,6,0,True
+6,Kimber's Boys,2987,8,2,0,True
+6,Solomon's Bakery,2676,3,2,0,True
+7,Sabini's Gang,2014,2,1,0,True
+7,Peaky Blinders,2418,4,2,0,True
+7,The Camden Boys,2292,6,1,0,True
+7,The Iron Hand,3000,5,6,0,True
+7,Kimber's Boys,3116,7,3,0,True
+7,Solomon's Bakery,2887,3,2,0,True
+8,Sabini's Gang,2244,3,1,0,True
+8,Peaky Blinders,2561,4,3,0,True
+8,The Camden Boys,2446,6,1,0,True
+8,The Iron Hand,3006,6,6,0,True
+8,Kimber's Boys,3255,7,3,0,True
+8,Solomon's Bakery,3098,3,2,0,True
+9,Sabini's Gang,2464,3,2,0,True
+9,Peaky Blinders,2704,4,3,0,True
+9,The Camden Boys,2600,6,1,0,True
+9,The Iron Hand,3002,6,6,0,True
+9,Kimber's Boys,3394,7,3,0,True
+9,Solomon's Bakery,3309,2,1,0,True
+10,Sabini's Gang,2684,3,2,0,True
+10,Peaky Blinders,2847,4,3,0,True
+10,The Camden Boys,2834,6,1,0,True
+10,The Iron Hand,2998,6,7,0,True
+10,Kimber's Boys,3533,7,3,0,True
+10,Solomon's Bakery,3530,2,1,0,True
+11,Sabini's Gang,2904,4,2,0,True
+11,Peaky Blinders,3063,4,4,0,True
+11,The Camden Boys,3068,6,2,0,True
+11,The Iron Hand,2994,6,8,0,True
+11,Kimber's Boys,3758,7,3,0,True
+11,Solomon's Bakery,3751,3,1,0,True
+12,Sabini's Gang,3114,4,2,0,True
+12,Peaky Blinders,3279,4,4,0,True
+12,The Camden Boys,3302,6,2,0,True
+12,The Iron Hand,2990,6,8,0,True
+12,Kimber's Boys,4038,7,3,0,True
+12,Solomon's Bakery,3962,4,1,0,True
+13,Sabini's Gang,3324,4,2,0,True
+13,Peaky Blinders,3495,4,4,0,True
+13,The Camden Boys,3536,6,2,0,True
+13,The Iron Hand,3072,6,8,0,True
+13,Kimber's Boys,4318,7,3,0,True
+13,Solomon's Bakery,4163,5,1,0,True
+14,Sabini's Gang,3534,5,2,0,True
+14,Peaky Blinders,3799,4,4,0,True
+14,The Camden Boys,3845,6,2,0,True
+14,The Iron Hand,3154,6,8,0,True
+14,Kimber's Boys,4598,6,3,0,True
+14,Solomon's Bakery,4354,4,1,0,True
+15,Sabini's Gang,3734,6,2,0,True
+15,Peaky Blinders,4103,4,4,0,True
+15,The Camden Boys,4154,6,2,0,True
+15,The Iron Hand,3287,6,8,0,True
+15,Kimber's Boys,4888,6,3,0,True
+15,Solomon's Bakery,4635,4,1,0,True
+16,Sabini's Gang,3924,6,2,0,True
+16,Peaky Blinders,4407,4,4,0,True
+16,The Camden Boys,4463,6,2,0,True
+16,The Iron Hand,3420,6,8,0,True
+16,Kimber's Boys,5178,5,3,0,True
+16,Solomon's Bakery,4971,4,1,0,True
+17,Sabini's Gang,4202,5,2,0,True
+17,Peaky Blinders,4768,4,4,0,True
+17,The Camden Boys,4772,6,2,0,True
+17,The Iron Hand,3553,6,8,0,True
+17,Kimber's Boys,5478,6,3,0,True
+17,Solomon's Bakery,5307,4,1,0,True
+18,Sabini's Gang,4490,5,2,0,True
+18,Peaky Blinders,5129,4,4,0,True
+18,The Camden Boys,5081,6,2,0,True
+18,The Iron Hand,3686,6,8,0,True
+18,Kimber's Boys,5768,6,3,0,True
+18,Solomon's Bakery,5695,4,1,0,True
+19,Sabini's Gang,4778,5,2,0,True
+19,Peaky Blinders,5490,4,4,0,True
+19,The Camden Boys,5390,6,3,0,True
+19,The Iron Hand,3819,5,8,0,True
+19,Kimber's Boys,6058,5,2,0,True
+19,Solomon's Bakery,6083,4,1,0,True

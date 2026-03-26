@@ -10,6 +10,7 @@ class Member:
         self.is_alive = True
         self.is_arrested = False
         self.experience = 0
+        self.wage = 10
     
     def combat_contribution(self):
         return
