@@ -77,6 +77,10 @@ class Simulation:
 
     def run_week(self, week):
         for organization in self.organizations:
+            organization.collect_income()
+            organization.pay_expenses()
+
+        for organization in self.organizations:
             action = choose_action(organization.personality)
             print(f"Week: {week}: {organization.name} chooses to {action}")
             if action == "Attack":
