@@ -10,8 +10,9 @@ import random
 import csv
 
 class Simulation:
-    def __init__(self, config):
+    def __init__(self, config, run_id):
         self.config = config
+        self.run_id = run_id
         self.organizations = []
         self.territories = []
         self.members = []
@@ -20,13 +21,13 @@ class Simulation:
         self.territory_names = ["The Docks", "Small Heath", "Canal Street", "Market Square", "Main Street,", "Old Town", "Boardwalk", "Iron Bridge", "Central Avenue", "Park Place", "Whitmore Lane", "Elm Court", "The Railyard", "St. Johns", "Boomtown", "The Garrison", "Johnnie McCracken's", "Diagon Alley", "The Foundry", "Governor's Street"]
         self.territory_types = ["street", "port", "warehouse", "gentleman's club", "plaza", "distillery", "pub", "bookmaker", "factory"]
         self.neighborhoods = ["London", "Birmingham", "Manchester", "Liverpool"]
-        self.organization_names = ["Sabini's Gang", "Peaky Blinders", "The Camden Boys", "The Iron Hand", "Kimber's Boys", "Solomon's Bakery"]
+        self.organization_names = ["Sabini's Gang", "Peaky Blinders", "Camden Boys", "The Iron Hand", "Kimber's Boys", "Solomons' Bakery", "The Cabal", "Backstreet Boys"]
         self.personalities = ["Opportunistic", "Territorial", "Vindictive", "Strategic"]
         self.member_names = ["Tommy", "Arthur", "John", "Alfie", "Billy", "Joel", "Ringo", "Curly", "Johnny", "Michael", "Finn", "Isaiah", "Bonnie", "Clyde"]
         self.member_types = ["Bruiser", "Operations", "Accounting", "Protection"]
         self.racket_types = ["Protection", "Gambling", "Smuggling"]
         self.setup()
-        self.csv_file = open('data/simulation_output.csv', 'w')
+        self.csv_file = open(f'data/run_{run_id}.csv', 'w')
         self.writer = csv.writer(self.csv_file)
         self.writer.writerow(['Week', 'Organization', 'Treasury', 'Members', 'Territories', 'Heat', 'Active'])
     
@@ -42,8 +43,9 @@ class Simulation:
             territory = Territory(name, type, income, heat, control_requirement, "visible", neighborhood)
             self.territories.append(territory)
         
+        org_names = random.sample(self.organization_names, self.config['num_orgs'])
         for i in range(self.config['num_orgs']):
-            name = self.organization_names[i]
+            name = org_names[i]
             personality = random.choice(self.personalities)
             treasury = self.config['starting_treasury'] + random.randint(-1000, 1000)
             organization = Organization(name, treasury, 0, None, None, personality)
@@ -154,7 +156,7 @@ class Simulation:
                 reduction = random.randint(0, 10)
                 organization.heat = max(0, organization.heat - reduction)
                 if reduction >= 5:
-                    print(f"Laying low: {organization.name}'s efforts pay off!'")
+                    print(f"Laying low: {organization.name}'s efforts pay off!")
                 elif reduction < 5:
                     print(f"Laying low: {organization.name}'s efforts are in vain.")
 

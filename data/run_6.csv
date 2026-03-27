@@ -1,0 +1,121 @@
+Week,Organization,Treasury,Members,Territories,Heat,Active
+0,Camden Boys,2764,2,1,0,True
+0,Peaky Blinders,3041,2,1,0,True
+0,The Iron Hand,1093,2,1,0,True
+0,Kimber's Boys,1193,2,1,0,True
+0,Backstreet Boys,1736,3,1,0,True
+0,Solomons' Bakery,1393,2,1,0,True
+1,Camden Boys,2822,2,2,0,True
+1,Peaky Blinders,3165,2,2,0,True
+1,The Iron Hand,1156,2,1,0,True
+1,Kimber's Boys,1234,2,1,0,True
+1,Backstreet Boys,1759,3,1,0,True
+1,Solomons' Bakery,1443,2,1,0,True
+2,Camden Boys,2880,2,3,0,True
+2,Peaky Blinders,3289,2,2,0,True
+2,The Iron Hand,1287,3,1,0,True
+2,Kimber's Boys,1275,3,1,0,True
+2,Backstreet Boys,1782,3,2,0,True
+2,Solomons' Bakery,1493,2,1,0,True
+3,Camden Boys,2938,2,3,0,True
+3,Peaky Blinders,3413,2,2,0,True
+3,The Iron Hand,1408,3,2,0,True
+3,Kimber's Boys,1306,3,2,0,True
+3,Backstreet Boys,1805,3,3,0,True
+3,Solomons' Bakery,1543,2,1,0,True
+4,Camden Boys,2996,2,3,0,True
+4,Peaky Blinders,3615,3,2,0,True
+4,The Iron Hand,1529,3,3,0,True
+4,Kimber's Boys,1337,3,2,0,True
+4,Backstreet Boys,1828,3,3,0,True
+4,Solomons' Bakery,1674,2,1,0,True
+5,Camden Boys,3106,2,3,0,True
+5,Peaky Blinders,3807,3,2,0,True
+5,The Iron Hand,1650,3,3,0,True
+5,Kimber's Boys,1368,3,2,0,True
+5,Backstreet Boys,1851,3,3,0,True
+5,Solomons' Bakery,1805,2,2,0,True
+6,Camden Boys,3216,2,4,0,True
+6,Peaky Blinders,3999,3,2,0,True
+6,The Iron Hand,1771,3,3,0,True
+6,Kimber's Boys,1399,4,2,0,True
+6,Backstreet Boys,1874,3,3,0,True
+6,Solomons' Bakery,1936,2,2,0,True
+7,Camden Boys,3326,2,4,0,True
+7,Peaky Blinders,4191,3,3,0,True
+7,The Iron Hand,1892,2,4,0,True
+7,Kimber's Boys,1420,4,2,0,True
+7,Backstreet Boys,1897,3,3,0,True
+7,Solomons' Bakery,2067,2,2,0,True
+8,Camden Boys,3436,2,4,0,True
+8,Peaky Blinders,4383,3,4,0,True
+8,The Iron Hand,2023,2,4,0,True
+8,Kimber's Boys,1500,4,2,0,True
+8,Backstreet Boys,1989,4,3,0,True
+8,Solomons' Bakery,2198,2,3,0,True
+9,Camden Boys,3546,2,5,0,True
+9,Peaky Blinders,4575,3,4,0,True
+9,The Iron Hand,2217,2,5,0,True
+9,Kimber's Boys,1580,3,2,0,True
+9,Backstreet Boys,2071,4,3,0,True
+9,Solomons' Bakery,2329,2,1,0,True
+10,Camden Boys,3656,2,5,0,True
+10,Peaky Blinders,4767,2,4,0,True
+10,The Iron Hand,2411,2,5,0,True
+10,Kimber's Boys,1755,3,2,0,True
+10,Backstreet Boys,2153,3,3,0,True
+10,Solomons' Bakery,2460,2,1,0,True
+11,Camden Boys,3766,2,5,0,True
+11,Peaky Blinders,5058,2,3,0,True
+11,The Iron Hand,2605,3,5,0,True
+11,Kimber's Boys,1930,3,2,0,True
+11,Backstreet Boys,2245,3,3,0,True
+11,Solomons' Bakery,2591,1,2,0,True
+12,Camden Boys,3876,2,5,0,True
+12,Peaky Blinders,5349,2,3,0,True
+12,The Iron Hand,2789,3,5,0,True
+12,Kimber's Boys,2105,3,2,0,True
+12,Backstreet Boys,2337,4,3,0,True
+12,Solomons' Bakery,2732,2,2,0,True
+13,Camden Boys,3986,3,5,0,True
+13,Peaky Blinders,5640,2,3,0,True
+13,The Iron Hand,3037,3,5,0,True
+13,Kimber's Boys,2280,2,2,0,True
+13,Backstreet Boys,2419,5,3,0,True
+13,Solomons' Bakery,2863,2,2,0,True
+14,Camden Boys,4086,2,5,0,True
+14,Peaky Blinders,5931,2,3,0,True
+14,The Iron Hand,3285,4,5,0,True
+14,Kimber's Boys,2525,2,2,0,True
+14,Backstreet Boys,2491,5,3,0,True
+14,Solomons' Bakery,2994,2,2,0,True
+15,Camden Boys,4196,2,5,0,True
+15,Peaky Blinders,6300,2,2,0,True
+15,The Iron Hand,3523,4,5,0,True
+15,Kimber's Boys,2840,2,2,0,True
+15,Backstreet Boys,2563,5,4,0,True
+15,Solomons' Bakery,3194,2,2,0,True
+16,Camden Boys,4306,3,5,0,True
+16,Peaky Blinders,6669,2,2,0,True
+16,The Iron Hand,3761,4,5,0,True
+16,Kimber's Boys,3155,2,2,0,True
+16,Backstreet Boys,2635,5,4,0,True
+16,Solomons' Bakery,3394,1,2,0,True
+17,Camden Boys,4406,3,5,0,True
+17,Peaky Blinders,7038,2,2,0,True
+17,The Iron Hand,3999,3,5,0,True
+17,Kimber's Boys,3470,3,2,0,True
+17,Backstreet Boys,2707,6,4,0,True
+17,Solomons' Bakery,3604,1,2,0,True
+18,Camden Boys,4506,2,6,0,True
+18,Peaky Blinders,7407,2,2,0,True
+18,The Iron Hand,4247,3,5,0,True
+18,Kimber's Boys,3775,3,2,0,True
+18,Backstreet Boys,2769,6,4,0,True
+18,Solomons' Bakery,3814,2,1,0,True
+19,Camden Boys,4616,2,6,0,True
+19,Peaky Blinders,7776,2,2,0,True
+19,The Iron Hand,4495,3,5,0,True
+19,Kimber's Boys,4080,2,2,0,True
+19,Backstreet Boys,2831,6,4,0,True
+19,Solomons' Bakery,4014,2,1,0,True
