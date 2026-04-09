@@ -10,9 +10,11 @@ import random
 import csv
 
 class Simulation:
-    def __init__(self, config, run_id):
+    def __init__(self, config, run_id, log_csv=True, print=True):
         self.config = config
         self.run_id = run_id
+        self.log_csv = log_csv
+        self.print = print
         self.organizations = []
         self.territories = []
         self.members = []
@@ -27,9 +29,10 @@ class Simulation:
         self.member_types = ["Bruiser", "Operations", "Accounting", "Protection"]
         self.racket_types = ["Protection", "Gambling", "Smuggling"]
         self.setup()
-        self.csv_file = open(f'data/run_{run_id}.csv', 'w')
-        self.writer = csv.writer(self.csv_file)
-        self.writer.writerow(['Week', 'Organization', 'Treasury', 'Members', 'Territories', 'Heat', 'Active'])
+        if self.log_csv:
+            self.csv_file = open(f'data/run_{run_id}.csv', 'w')
+            self.writer = csv.writer(self.csv_file)
+            self.writer.writerow(['Week', 'Organization', 'Treasury', 'Members', 'Territories', 'Heat', 'Active'])
     
     def setup(self):
     
@@ -76,13 +79,17 @@ class Simulation:
     def run(self, num_weeks):
         for week in range(num_weeks):
             self.run_week(week)
-        print("\n--- Simulation Summary ---")
+        if self.print:
+            print("\n--- Simulation Summary ---")
         for org in self.organizations:
-            print(f"{org.name}: Treasury=${org.treasury}, Members={len(org.members)}, Territories={len(org.territories)}")
+            if self.print:
+                print(f"{org.name}: Treasury=${org.treasury}, Members={len(org.members)}, Territories={len(org.territories)}")
         for relation in self.relationships:
-            print(f"{relation.org_a.name} & {relation.org_b.name}: {relation.state} | History: {relation.history}")
+            if self.print:
+                print(f"{relation.org_a.name} & {relation.org_b.name}: {relation.state} | History: {relation.history}")
         
-        self.csv_file.close()
+        if self.log_csv:
+            self.csv_file.close()
 
     def run_week(self, week):
         for organization in self.organizations:
@@ -93,7 +100,8 @@ class Simulation:
         for organization in self.organizations:
             if not organization.is_active: continue
             action = choose_action(organization.personality)
-            print(f"Week: {week}: {organization.name} chooses to {action}")
+            if self.print:
+                print(f"Week: {week}: {organization.name} chooses to {action}")
             if action == "Attack":
                 target = None
                 for rel in self.relationships:
@@ -106,7 +114,8 @@ class Simulation:
                     winner, winner_casualties, loser_casualties = resolve_combat(organization, target, territory)
                     organization.calculate_heat_delta(15)
                     target.calculate_heat_delta(7)
-                    print(f"Combat: {organization.name} attacks {target.name} for {territory.name} —— {winner.name} wins!")
+                    if self.print:
+                        print(f"Combat: {organization.name} attacks {target.name} for {territory.name} —— {winner.name} wins!")
                     if len(target.territories) == 0:
                         winner.treasury += target.treasury
                         target.treasury = 0
@@ -119,7 +128,8 @@ class Simulation:
                         organization.territories.append(territory)
                         territory.owner = organization
                         organization.calculate_heat_delta(5)
-                        print(f"Expansion: {organization.name} expands to {territory.name}!")
+                        if self.print:
+                            print(f"Expansion: {organization.name} expands to {territory.name}!")
                         break
             
             elif action == "Recruit":
@@ -128,7 +138,8 @@ class Simulation:
                 loyalty = random.randint(40, 80)
                 new_member = Member(name, skill, loyalty, "Bruiser")
                 organization.recruit_members([new_member])
-                print(f"Recruitment: {organization.name} recruits new member {new_member.name}!")
+                if self.print:
+                    print(f"Recruitment: {organization.name} recruits new member {new_member.name}!")
 
             elif action == "Establish":
                 type = random.choice(["Protection", "Gambling", "Smuggling"])
@@ -142,7 +153,8 @@ class Simulation:
                     organization.calculate_heat_delta(7)
                 elif new_racket.type == "Smuggling":
                     organization.calculate_heat_delta(10)
-                print(f"Growth: {organization.name} establishes new {new_racket.type} racket!")
+                if self.print:
+                    print(f"Growth: {organization.name} establishes new {new_racket.type} racket!")
             
             elif action == "Negotiate":
                 target = None
@@ -159,29 +171,34 @@ class Simulation:
                     pressure = random.random()
                     new_state = markov_transition(found_rel.state, pressure)
                     found_rel.update(new_state)
-                    print(f"Negotiation: {organization.name} negotiates with {target.name} —— New state: {new_state}")
+                    if self.print:
+                        print(f"Negotiation: {organization.name} negotiates with {target.name} —— New state: {new_state}")
                 
             elif action == "Lay Low":
                 reduction = random.randint(0, 10)
                 organization.heat = max(0, organization.heat - reduction)
                 if reduction >= 5:
-                    print(f"Laying low: {organization.name}'s efforts pay off!")
+                    if self.print:
+                        print(f"Laying low: {organization.name}'s efforts pay off!")
                 elif reduction < 5:
-                    print(f"Laying low: {organization.name}'s efforts are in vain.")
+                    if self.print:
+                        print(f"Laying low: {organization.name}'s efforts are in vain.")
 
 
         for relationship in self.relationships:
             old_state = relationship.state
             new_state = markov_transition(relationship.state, random.random() * 2 - 1)
             relationship.update(new_state)
-            print(f"Week: {week}: {relationship.org_a.name} and {relationship.org_b.name}: {old_state} -> {new_state}")
+            if self.print:
+                print(f"Week: {week}: {relationship.org_a.name} and {relationship.org_b.name}: {old_state} -> {new_state}")
 
         betrayals = []
         for organization in self.organizations:
             for member in organization.members:
                 if member.check_betrayal():
                     betrayals.append(member)
-                    print(f"Betrayal: {member.name} betrays {organization.name}!")
+                    if self.print:
+                        print(f"Betrayal: {member.name} betrays {organization.name}!")
             for member in betrayals:
                 organization.members.remove(member)
             betrayals.clear()
@@ -216,17 +233,21 @@ class Simulation:
                     organization.treasury = organization.treasury - assets_seized
                     organization.calculate_heat_delta(-30)
                     if category == 'territory':
-                        print(f"Raid: The police have raided {organization.name}'s {target.name}, arresting {arrested_member.name} and seizing ${assets_seized}!")
+                        if self.print:
+                            print(f"Raid: The police have raided {organization.name}'s {target.name}, arresting {arrested_member.name} and seizing ${assets_seized}!")
                     elif category == 'racket':
-                        print(f"Raid: The police have raided {organization.name}, arresting {arrested_member.name} and shutting down their {target.type} racket!")
+                        if self.print:
+                            print(f"Raid: The police have raided {organization.name}, arresting {arrested_member.name} and shutting down their {target.type} racket!")
 
         for organization in self.organizations:
             if organization.is_active and (len(organization.territories) == 0 or len(organization.members) == 0):
                 organization.eliminate()
-                print(f"Elimination: {organization.name} has been eliminated!")
+                if self.print:
+                    print(f"Elimination: {organization.name} has been eliminated!")
 
         
-        for organization in self.organizations:
-            self.writer.writerow([week, organization.name, organization.treasury, len(organization.members), len(organization.territories), organization.heat, organization.is_active])
+        if self.log_csv:
+            for organization in self.organizations:
+                self.writer.writerow([week, organization.name, organization.treasury, len(organization.members), len(organization.territories), organization.heat, organization.is_active])
                 
         
