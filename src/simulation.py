@@ -104,6 +104,8 @@ class Simulation:
                 if target and len(target.territories) > 0:
                     territory = random.choice(target.territories)
                     winner, winner_casualties, loser_casualties = resolve_combat(organization, target, territory)
+                    organization.calculate_heat_delta(15)
+                    target.calculate_heat_delta(7)
                     print(f"Combat: {organization.name} attacks {target.name} for {territory.name} —— {winner.name} wins!")
                     if len(target.territories) == 0:
                         winner.treasury += target.treasury
@@ -116,6 +118,7 @@ class Simulation:
                     if territory.owner is None:
                         organization.territories.append(territory)
                         territory.owner = organization
+                        organization.calculate_heat_delta(5)
                         print(f"Expansion: {organization.name} expands to {territory.name}!")
                         break
             
@@ -133,6 +136,12 @@ class Simulation:
                 heat = random.randint(1, 3)
                 new_racket = Racket(type, income, heat)
                 organization.rackets.append(new_racket)
+                if new_racket.type == "Protection":
+                    organization.calculate_heat_delta(4)
+                elif new_racket.type == "Gambling":
+                    organization.calculate_heat_delta(7)
+                elif new_racket.type == "Smuggling":
+                    organization.calculate_heat_delta(10)
                 print(f"Growth: {organization.name} establishes new {new_racket.type} racket!")
             
             elif action == "Negotiate":
@@ -176,12 +185,46 @@ class Simulation:
             for member in betrayals:
                 organization.members.remove(member)
             betrayals.clear()
-
+        
+        for organization in self.organizations:
+            if organization.heat >= self.config['raid_threshold']:
+                excess = organization.heat - self.config['raid_threshold']
+                raid_prob = 0.05 + (excess * 0.01)
+                if raid_prob > random.random():
+                    if organization.members:
+                        arrested_member = random.choice(organization.members)
+                        organization.members.remove(arrested_member)
+                    
+                    category = None
+                    categories = []
+                    if organization.territories:
+                        categories.append('territory')
+                    if organization.rackets:
+                        categories.append('racket')
+                    
+                    if categories:
+                        category = random.choice(categories)
+                        if category == 'territory':
+                            target = random.choice(organization.territories)
+                            target.owner = None
+                            organization.territories.remove(target)
+                        else:
+                            target = random.choice(organization.rackets)
+                            organization.rackets.remove(target)
+                    
+                    assets_seized = int(organization.treasury * 0.1)
+                    organization.treasury = organization.treasury - assets_seized
+                    organization.calculate_heat_delta(-30)
+                    if category == 'territory':
+                        print(f"Raid: The police have raided {organization.name}'s {target.name}, arresting {arrested_member.name} and seizing ${assets_seized}!")
+                    elif category == 'racket':
+                        print(f"Raid: The police have raided {organization.name}, arresting {arrested_member.name} and shutting down their {target.type} racket!")
 
         for organization in self.organizations:
             if organization.is_active and (len(organization.territories) == 0 or len(organization.members) == 0):
                 organization.eliminate()
                 print(f"Elimination: {organization.name} has been eliminated!")
+
         
         for organization in self.organizations:
             self.writer.writerow([week, organization.name, organization.treasury, len(organization.members), len(organization.territories), organization.heat, organization.is_active])

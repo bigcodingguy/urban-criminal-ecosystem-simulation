@@ -1,121 +1,121 @@
 Week,Organization,Treasury,Members,Territories,Heat,Active
-0,The Iron Hand,2070,5,1,0,True
-0,Peaky Blinders,1697,5,1,0,True
-0,Solomons' Bakery,2974,5,2,0,True
-0,The Cabal,2835,5,2,0,True
-0,Sabini's Gang,1451,5,1,0,True
-0,Backstreet Boys,1781,5,2,0,True
-1,The Iron Hand,2070,5,1,0,True
-1,Peaky Blinders,1711,4,1,0,True
-1,Solomons' Bakery,2978,5,2,0,True
-1,The Cabal,2846,5,2,0,True
-1,Sabini's Gang,1468,5,1,0,True
-1,Backstreet Boys,1798,5,2,0,True
-2,The Iron Hand,2070,5,1,0,True
-2,Peaky Blinders,1735,4,1,0,True
-2,Solomons' Bakery,2982,4,2,0,True
-2,The Cabal,2914,2,2,0,True
-2,Sabini's Gang,1485,5,2,0,True
-2,Backstreet Boys,1815,5,2,0,True
-3,The Iron Hand,2070,5,1,0,True
-3,Peaky Blinders,1759,3,1,0,True
-3,Solomons' Bakery,2996,5,2,0,True
-3,The Cabal,3012,3,2,0,True
-3,Sabini's Gang,1502,4,2,0,True
-3,Backstreet Boys,1905,5,2,0,True
-4,The Iron Hand,2135,4,1,0,True
-4,Peaky Blinders,1793,3,1,0,True
-4,Solomons' Bakery,3000,5,2,0,True
-4,The Cabal,3100,3,2,0,True
-4,Sabini's Gang,1529,4,2,0,True
-4,Backstreet Boys,1995,5,2,0,True
-5,The Iron Hand,2210,4,2,0,True
-5,Peaky Blinders,1827,4,1,0,True
-5,Solomons' Bakery,3093,6,1,0,True
-5,The Cabal,3239,3,2,0,True
-5,Sabini's Gang,1627,2,2,0,True
-5,Backstreet Boys,2152,5,2,0,True
-6,The Iron Hand,2285,4,2,0,True
-6,Peaky Blinders,1851,5,1,0,True
-6,Solomons' Bakery,3176,6,1,0,True
-6,The Cabal,3449,1,2,0,True
-6,Sabini's Gang,1745,2,3,0,True
-6,Backstreet Boys,2369,4,2,0,True
-7,The Iron Hand,2446,4,3,0,True
-7,Peaky Blinders,1865,6,1,0,True
-7,Solomons' Bakery,3259,6,2,0,True
-7,The Cabal,3679,1,2,0,True
-7,Sabini's Gang,1863,3,3,0,True
-7,Backstreet Boys,2647,5,2,0,True
-8,The Iron Hand,2607,4,4,0,True
-8,Peaky Blinders,1869,5,2,0,True
-8,Solomons' Bakery,3342,6,2,0,True
-8,The Cabal,3909,1,2,0,True
-8,Sabini's Gang,1971,3,3,0,True
-8,Backstreet Boys,2915,6,2,0,True
-9,The Iron Hand,2768,4,4,0,True
-9,Peaky Blinders,1883,6,2,0,True
-9,Solomons' Bakery,3425,6,2,0,True
-9,The Cabal,4139,1,2,0,True
-9,Sabini's Gang,2079,3,3,0,True
-9,Backstreet Boys,3173,7,2,0,True
-10,The Iron Hand,2929,4,5,0,True
-10,Peaky Blinders,1887,6,2,0,True
-10,Solomons' Bakery,3594,6,2,0,True
-10,The Cabal,4369,1,2,0,True
-10,Sabini's Gang,2187,4,3,0,True
-10,Backstreet Boys,3421,7,2,0,True
-11,The Iron Hand,3090,4,5,0,True
-11,Peaky Blinders,1942,6,3,0,True
-11,Solomons' Bakery,3763,6,3,0,True
-11,The Cabal,4599,2,2,0,True
-11,Sabini's Gang,2285,4,3,0,True
-11,Backstreet Boys,3669,7,2,0,True
-12,The Iron Hand,3251,4,5,0,True
-12,Peaky Blinders,1997,5,3,0,True
-12,Solomons' Bakery,3932,6,3,0,True
-12,The Cabal,4819,2,2,0,True
-12,Sabini's Gang,2449,4,3,0,True
-12,Backstreet Boys,3975,8,2,0,True
-13,The Iron Hand,3412,5,5,0,True
-13,Peaky Blinders,2062,5,4,0,True
-13,Solomons' Bakery,4101,6,3,0,True
-13,The Cabal,5039,1,1,0,True
-13,Sabini's Gang,2613,4,4,0,True
-13,Backstreet Boys,4271,8,3,0,True
-14,The Iron Hand,3563,5,5,0,True
-14,Peaky Blinders,2127,5,4,0,True
-14,Solomons' Bakery,4270,6,3,0,True
-14,The Cabal,5269,1,1,0,True
-14,Sabini's Gang,2777,2,4,0,True
-14,Backstreet Boys,4567,8,3,0,True
-15,The Iron Hand,3714,5,5,0,True
-15,Peaky Blinders,2192,4,5,0,True
-15,Solomons' Bakery,4439,3,2,0,True
-15,The Cabal,5499,2,1,0,True
-15,Sabini's Gang,3025,2,4,0,True
-15,Backstreet Boys,4863,8,3,0,True
-16,The Iron Hand,3865,5,5,0,True
-16,Peaky Blinders,2267,5,5,0,True
-16,Solomons' Bakery,4638,2,2,0,True
-16,The Cabal,5719,2,1,0,True
-16,Sabini's Gang,3330,2,4,0,True
-16,Backstreet Boys,5159,8,3,0,True
-17,The Iron Hand,4016,3,5,0,True
-17,Peaky Blinders,2332,4,5,0,True
-17,Solomons' Bakery,4847,2,1,0,True
-17,The Cabal,5939,2,1,0,True
-17,Sabini's Gang,3635,2,4,0,True
-17,Backstreet Boys,5534,8,4,0,True
-18,The Iron Hand,4187,3,5,0,True
-18,Peaky Blinders,2407,4,5,0,True
-18,Solomons' Bakery,5056,3,1,0,True
-18,The Cabal,6159,2,1,0,True
-18,Sabini's Gang,4008,2,4,0,True
-18,Backstreet Boys,5909,8,4,0,True
-19,The Iron Hand,4358,3,5,0,True
-19,Peaky Blinders,2482,5,5,0,True
-19,Solomons' Bakery,5255,4,1,0,True
-19,The Cabal,6451,2,1,0,True
-19,Sabini's Gang,4456,2,4,0,True
-19,Backstreet Boys,6284,6,4,0,True
+0,Peaky Blinders,2241,5,1,0,True
+0,Camden Boys,1290,6,1,0,True
+0,Kimber's Boys,1179,5,1,0,True
+0,The Iron Hand,1422,6,1,0,True
+0,The Cabal,2293,6,1,0,True
+0,Sabini's Gang,1443,5,1,7,True
+1,Peaky Blinders,2268,5,1,4,True
+1,Camden Boys,1318,6,1,7,True
+1,Kimber's Boys,1206,5,1,0,True
+1,The Iron Hand,1423,6,2,5,True
+1,The Cabal,2306,6,1,0,True
+1,Sabini's Gang,1500,5,2,12,True
+2,Peaky Blinders,2362,5,2,9,True
+2,Camden Boys,1403,6,2,12,True
+2,Kimber's Boys,1233,5,1,4,True
+2,The Iron Hand,1424,6,2,0,True
+2,The Cabal,2319,7,1,0,True
+2,Sabini's Gang,1557,5,2,22,True
+3,Peaky Blinders,2456,6,2,9,True
+3,Camden Boys,1488,6,2,19,True
+3,Kimber's Boys,1324,5,2,19,True
+3,The Iron Hand,1425,6,3,5,True
+3,The Cabal,2322,7,1,4,True
+3,Sabini's Gang,1666,5,1,29,True
+4,Peaky Blinders,2540,6,2,16,True
+4,Camden Boys,1637,5,2,29,True
+4,Kimber's Boys,1415,5,2,16,True
+4,The Iron Hand,1426,5,3,12,True
+4,The Cabal,2409,6,1,4,True
+4,Sabini's Gang,1775,5,2,34,True
+5,Peaky Blinders,2710,6,3,21,True
+5,Camden Boys,1862,6,2,29,True
+5,Kimber's Boys,1506,6,2,16,True
+5,The Iron Hand,1516,5,3,9,True
+5,The Cabal,2506,6,1,4,True
+5,Sabini's Gang,1884,5,3,39,True
+6,Peaky Blinders,2880,6,3,21,True
+6,Camden Boys,2077,6,2,44,True
+6,Kimber's Boys,1587,6,2,9,True
+6,The Iron Hand,1606,5,3,26,True
+6,The Cabal,0,0,0,11,False
+6,Sabini's Gang,4596,5,4,54,True
+7,Peaky Blinders,3050,7,3,21,True
+7,Camden Boys,2292,6,3,56,True
+7,Kimber's Boys,1668,7,2,9,True
+7,The Iron Hand,1746,5,4,31,True
+7,The Cabal,0,0,0,11,False
+7,Sabini's Gang,4235,4,3,39,True
+8,Peaky Blinders,3210,7,4,26,True
+8,Camden Boys,2507,3,2,63,True
+8,Kimber's Boys,1739,7,3,24,True
+8,The Iron Hand,1886,6,4,31,True
+8,The Cabal,0,0,0,11,False
+8,Sabini's Gang,4354,4,3,43,True
+9,Peaky Blinders,3370,6,4,43,True
+9,Camden Boys,2752,3,3,68,True
+9,Kimber's Boys,1810,7,3,24,True
+9,The Iron Hand,2016,6,4,46,True
+9,The Cabal,0,0,0,11,False
+9,Sabini's Gang,4541,4,3,43,True
+10,Peaky Blinders,3629,6,4,47,True
+10,Camden Boys,2997,3,2,79,True
+10,Kimber's Boys,1881,7,3,31,True
+10,The Iron Hand,2146,6,4,46,True
+10,The Cabal,0,0,0,11,False
+10,Sabini's Gang,4728,4,4,58,True
+11,Peaky Blinders,3966,5,4,62,True
+11,Camden Boys,3298,3,2,77,True
+11,Kimber's Boys,2020,7,3,31,True
+11,The Iron Hand,2049,4,3,38,True
+11,The Cabal,0,0,0,11,False
+11,Sabini's Gang,4915,4,4,65,True
+12,Peaky Blinders,3882,4,4,37,True
+12,Camden Boys,3599,3,3,89,True
+12,Kimber's Boys,2159,8,3,31,True
+12,The Iron Hand,2199,4,3,53,True
+12,The Cabal,0,0,0,11,False
+12,Sabini's Gang,5184,4,4,58,True
+13,Peaky Blinders,4239,3,4,52,True
+13,Camden Boys,3900,4,3,96,True
+13,Kimber's Boys,2288,8,3,41,True
+13,The Iron Hand,2349,4,3,70,True
+13,The Cabal,0,0,0,11,False
+13,Sabini's Gang,4908,3,3,43,True
+14,Peaky Blinders,4606,4,4,52,True
+14,Camden Boys,3772,3,2,70,True
+14,Kimber's Boys,2504,8,3,41,True
+14,The Iron Hand,2323,3,3,47,True
+14,The Cabal,0,0,0,11,False
+14,Sabini's Gang,5187,3,4,48,True
+15,Peaky Blinders,4467,3,5,37,True
+15,Camden Boys,3734,2,1,55,True
+15,Kimber's Boys,2720,9,3,41,True
+15,The Iron Hand,2546,2,3,59,True
+15,The Cabal,0,0,0,11,False
+15,Sabini's Gang,5466,3,4,55,True
+16,Peaky Blinders,4745,3,6,42,True
+16,Camden Boys,4120,2,1,55,True
+16,Kimber's Boys,2926,10,3,41,True
+16,The Iron Hand,2502,1,2,36,True
+16,The Cabal,0,0,0,11,False
+16,Sabini's Gang,5745,3,4,54,True
+17,Peaky Blinders,5023,3,6,52,True
+17,Camden Boys,4056,0,0,35,False
+17,Kimber's Boys,3122,9,4,46,True
+17,The Iron Hand,2818,1,3,41,True
+17,The Cabal,0,0,0,11,False
+17,Sabini's Gang,6024,3,5,59,True
+18,Peaky Blinders,5364,3,6,52,True
+18,Camden Boys,4056,0,0,35,False
+18,Kimber's Boys,3328,9,4,46,True
+18,The Iron Hand,3134,1,4,46,True
+18,The Cabal,0,0,0,11,False
+18,Sabini's Gang,5673,2,4,36,True
+19,Peaky Blinders,5705,2,6,67,True
+19,Camden Boys,4056,0,0,35,False
+19,Kimber's Boys,3534,9,5,58,True
+19,The Iron Hand,3450,1,4,68,True
+19,The Cabal,0,0,0,11,False
+19,Sabini's Gang,6012,3,4,36,True
