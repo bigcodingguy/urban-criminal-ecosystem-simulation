@@ -16,6 +16,63 @@ baseline = {
     'raid_threshold': 50
 }
 
+sensitivity_parameters = {
+    'num_orgs': [3, 5, 6, 7, 8],
+    'starting_treasury': [500, 1000, 2000, 3500, 5000],
+    'members_per_org': [2, 4, 6, 8, 10],
+    'num_territories': [8, 12, 16, 20],
+    'raid_threshold': [30, 50, 70, 90]
+}
+
+scenarios = {}
+scenarios['normal'] = baseline
+
+crowded_but_poor = baseline.copy()
+crowded_but_poor['num_orgs'] = 8
+crowded_but_poor['starting_treasury'] = 500
+crowded_but_poor['num_territories'] = 12
+scenarios['crowded_but_poor'] = crowded_but_poor
+
+rich_but_sparse = baseline.copy()
+rich_but_sparse['num_orgs'] = 3
+rich_but_sparse['starting_treasury'] = 5000
+rich_but_sparse['members_per_org'] = 8
+rich_but_sparse['raid_threshold'] = 80
+scenarios['rich_but_sparse'] = rich_but_sparse
+
+police_state = baseline.copy()
+police_state['raid_threshold'] = 30
+scenarios['police_state'] = police_state
+
+extreme_conditions = {}
+two_orgs = baseline.copy()
+two_orgs['num_orgs'] = 2
+extreme_conditions['two_orgs'] = two_orgs
+
+max_orgs_crowded = baseline.copy()
+max_orgs_crowded['num_orgs'] = 8
+max_orgs_crowded['num_territories'] = 8
+extreme_conditions['max_orgs_crowded'] = max_orgs_crowded
+
+no_police = baseline.copy()
+no_police['raid_threshold'] = 100
+extreme_conditions['no_police'] = no_police
+
+maximum_police = baseline.copy()
+maximum_police['raid_threshold'] = 0
+extreme_conditions['maximum_police'] = maximum_police
+
+long_run = baseline.copy()
+long_run['num_weeks'] = 50
+extreme_conditions['long_run'] = long_run
+
+very_long_run = baseline.copy()
+very_long_run['num_weeks'] = 100
+extreme_conditions['very_long_run'] = very_long_run
+
+
+
+
 def run_sim(config, run_id):
     sim = Simulation(config, run_id, log_csv=False, print=False)
     sim.run(config['num_weeks'])
@@ -80,3 +137,76 @@ def aggregate_runs(results_list):
         }
 
     return summary
+
+def run_analysis():
+    results = {}
+    for parameter, values in sensitivity_parameters.items():
+        results[parameter] = {}
+        for value in values:
+            config = baseline.copy()
+            config[parameter] = value
+
+            runs = []
+            for i in range(num_runs):
+                runs.append(run_sim(config, i))
+            
+            stats = aggregate_runs(runs)
+            inner_dict = results[parameter]
+            inner_dict[value] = stats
+    return results
+
+def run_scenarios():
+    results = {}
+    for scenario, config in scenarios.items():
+        runs = []
+        for i in range(num_runs):
+            runs.append(run_sim(config, i))
+        
+        stats = aggregate_runs(runs)
+        results[scenario] = stats
+
+    return results
+
+def run_extremes():
+    results = {}
+    for extreme, config in extreme_conditions.items():
+        runs = []
+        for i in range(num_runs):
+            runs.append(run_sim(config, i))
+        
+        stats = aggregate_runs(runs)
+        results[extreme] = stats
+
+    return results
+
+def print_analysis(results):
+    for parameter, values in results.items():
+        print(f"--- {parameter} ---")
+        for value, metrics in values.items():
+            print(f"  value = {value}")
+            for metric, stats in metrics.items():
+                print(f"    {metric}: mean={stats['mean']}, standard deviation={stats['std']}, min={stats['minimum']}, max={stats['maximum']}, confidence interval=[{stats['ci_low']}, {stats['ci_high']}]")
+        
+def print_scenarios(results):
+    for scenario, metrics in results.items():
+        print(f"--- {scenario} ---")
+        for metric, stats in metrics.items():
+            print(f"  {metric}: mean={stats['mean']}, standard deviation={stats['std']}, min={stats['minimum']}, max={stats['maximum']}, confidence interval=[{stats['ci_low']}, {stats['ci_high']}]")
+
+print("Running sensitivity analysis...")
+sensitivity_results = run_analysis()
+
+print("\nRunning scenarios...")
+scenario_results = run_scenarios()
+
+print("\nRunning extreme conditions...")
+extreme_results = run_extremes()
+
+print("\n----- Sensitivity Results -----")
+print_analysis(sensitivity_results)
+
+print("\n----- Scenario Results -----")
+print_scenarios(scenario_results)
+
+print("\n----- Extreme Condition Results -----")
+print_scenarios(extreme_results)
