@@ -193,6 +193,67 @@ def print_scenarios(results):
         for metric, stats in metrics.items():
             print(f"  {metric}: mean={stats['mean']}, standard deviation={stats['std']}, min={stats['minimum']}, max={stats['maximum']}, confidence interval=[{stats['ci_low']}, {stats['ci_high']}]")
 
+def plot_sensitivity(results):
+    figure, axes = plt.subplots(2, 3, figsize=(14, 8))
+    axes = axes.flatten()
+    x = list(results['num_orgs'].keys())
+    y = []
+    for value in x:
+        y.append(results['num_orgs'][value]['surviving_orgs']['mean'])
+    axes[0].plot(x, y)
+    axes[0].set_title('num_orgs vs surviving_orgs')
+    axes[0].set_xlabel('num_orgs')
+    axes[0].set_ylabel('surviving_orgs')
+
+    x = list(results['starting_treasury'].keys())
+    y = []
+    for value in x:
+        y.append(results['starting_treasury'][value]['surviving_orgs']['mean'])
+    axes[1].plot(x, y)
+    axes[1].set_title('starting_treasury vs surviving_orgs')
+    axes[1].set_xlabel('starting_treasury')
+    axes[1].set_ylabel('surviving_orgs')
+
+    x = list(results['members_per_org'].keys())
+    y = []
+    for value in x:
+        y.append(results['members_per_org'][value]['surviving_orgs']['mean'])
+    axes[2].plot(x, y)
+    axes[2].set_title('members_per_org vs surviving_orgs')
+    axes[2].set_xlabel('members_per_org')
+    axes[2].set_ylabel('surviving_orgs')
+
+    x = list(results['num_territories'].keys())
+    y = []
+    for value in x:
+        y.append(results['num_territories'][value]['surviving_orgs']['mean'])
+    axes[3].plot(x, y)
+    axes[3].set_title('num_territories vs surviving_orgs')
+    axes[3].set_xlabel('num_territories')
+    axes[3].set_ylabel('surviving_orgs')
+
+    x = list(results['raid_threshold'].keys())
+    y = []
+    for value in x:
+        y.append(results['raid_threshold'][value]['avg_heat']['mean'])
+    axes[4].plot(x, y)
+    axes[4].set_title('raid_threshold vs avg_heat')
+    axes[4].set_xlabel('raid_threshold')
+    axes[4].set_ylabel('avg_heat')
+
+    x = list(results['raid_threshold'].keys())
+    y = []
+    for value in x:
+        y.append(results['raid_threshold'][value]['avg_treasury']['mean'])
+    axes[5].plot(x, y)
+    axes[5].set_title('raid_threshold vs avg_treasury')
+    axes[5].set_xlabel('raid_threshold')
+    axes[5].set_ylabel('avg_treasury')
+
+    plt.tight_layout()
+    plt.savefig('data/sensitivity_plot.png')
+    plt.close()
+
 print("Running sensitivity analysis...")
 sensitivity_results = run_analysis()
 
@@ -210,3 +271,5 @@ print_scenarios(scenario_results)
 
 print("\n----- Extreme Condition Results -----")
 print_scenarios(extreme_results)
+
+plot_sensitivity(sensitivity_results)
