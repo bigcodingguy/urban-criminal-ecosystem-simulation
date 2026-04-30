@@ -1,0 +1,61 @@
+Week,Organization,Treasury,Members,Territories,Heat,Active
+0,Peaky Blinders,5801,5,1,0,True
+0,The Iron Hand,5101,5,1,0,True
+0,Camden Boys,5018,5,1,0,True
+1,Peaky Blinders,5824,5,1,0,True
+1,The Iron Hand,5120,5,1,0,True
+1,Camden Boys,5025,5,1,0,True
+2,Peaky Blinders,5847,5,2,0,True
+2,The Iron Hand,5204,5,1,0,True
+2,Camden Boys,5032,5,1,0,True
+3,Peaky Blinders,5870,5,2,0,True
+3,The Iron Hand,5361,5,1,0,True
+3,Camden Boys,5039,5,1,0,True
+4,Peaky Blinders,5893,5,3,0,True
+4,The Iron Hand,5518,5,1,0,True
+4,Camden Boys,5046,6,1,0,True
+5,Peaky Blinders,5916,5,3,0,True
+5,The Iron Hand,5675,5,1,0,True
+5,Camden Boys,5043,7,1,0,True
+6,Peaky Blinders,5939,5,3,0,True
+6,The Iron Hand,5832,5,1,0,True
+6,Camden Boys,5030,7,1,0,True
+7,Peaky Blinders,5962,5,4,0,True
+7,The Iron Hand,6075,6,1,0,True
+7,Camden Boys,5082,7,1,0,True
+8,Peaky Blinders,5985,5,4,0,True
+8,The Iron Hand,6308,7,1,0,True
+8,Camden Boys,5134,7,1,0,True
+9,Peaky Blinders,6088,5,5,0,True
+9,The Iron Hand,6531,7,1,0,True
+9,Camden Boys,5186,8,1,0,True
+10,Peaky Blinders,6191,5,5,0,True
+10,The Iron Hand,6826,8,1,0,True
+10,Camden Boys,5228,7,1,0,True
+11,Peaky Blinders,6294,5,6,0,True
+11,The Iron Hand,7111,8,1,0,True
+11,Camden Boys,5370,7,1,0,True
+12,Peaky Blinders,6397,5,6,0,True
+12,The Iron Hand,7396,7,1,0,True
+12,Camden Boys,5601,5,1,0,True
+13,Peaky Blinders,6500,5,7,0,True
+13,The Iron Hand,7691,7,1,0,True
+13,Camden Boys,5852,5,1,0,True
+14,Peaky Blinders,6603,5,8,0,True
+14,The Iron Hand,7986,7,1,0,True
+14,Camden Boys,6103,5,1,0,True
+15,Peaky Blinders,6706,5,8,0,True
+15,The Iron Hand,8281,6,1,0,True
+15,Camden Boys,6407,5,1,0,True
+16,Peaky Blinders,6866,5,8,0,True
+16,The Iron Hand,8586,6,2,0,True
+16,Camden Boys,6711,5,1,0,True
+17,Peaky Blinders,7097,5,9,0,True
+17,The Iron Hand,8891,5,2,0,True
+17,Camden Boys,7015,5,1,0,True
+18,Peaky Blinders,7328,5,9,0,True
+18,The Iron Hand,9273,5,2,0,True
+18,Camden Boys,7319,5,1,0,True
+19,Peaky Blinders,7643,6,9,0,True
+19,The Iron Hand,9745,6,2,0,True
+19,Camden Boys,7685,5,1,0,True

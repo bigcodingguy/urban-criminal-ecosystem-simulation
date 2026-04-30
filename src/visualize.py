@@ -1,8 +1,20 @@
 import csv
 import matplotlib.pyplot as plt
 
+run_names = {
+    1: 'Baseline',
+    2: 'Crowded but Poor',
+    3: 'Rich but Sparse',
+    4: 'Police State',
+    5: 'Two Orgs',
+    6: 'Max Orgs Crowded',
+    7: 'No Police',
+    8: 'Maximum Police',
+    9: 'Long Run (50 weeks)',
+    10: 'Very Long Run (100 weeks)'
+}
 data = {}
-for run_id in [1, 9, 10]:
+for run_id in range(1, 11):
     data.clear()
     with open(f'data/run_{run_id}.csv', 'r') as file:
         reader = csv.reader(file)

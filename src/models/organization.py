@@ -23,7 +23,7 @@ class Organization:
             self.treasury += int(territory.income_value * (territory.control_requirement / 2) * 0.3)
         return self.treasury
     
-    def pay_expenses(self):
+    def pay_expenses(self, verbose=False):
         sorted_members = sorted(self.members, key=lambda m: m.skill, reverse=True)
         money_left = self.treasury
         unpaid_members = 0
@@ -33,7 +33,7 @@ class Organization:
             else:
                 member.update_loyalty(-10)
                 unpaid_members += 1
-        if unpaid_members > 0:
+        if unpaid_members > 0 and verbose:
             print(f"{self.name} skipped {unpaid_members} paychecks this week. Loyalty wavers.")
         self.treasury = money_left
     

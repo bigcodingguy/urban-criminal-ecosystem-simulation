@@ -50,7 +50,8 @@ class Simulation:
         for i in range(self.config['num_orgs']):
             name = org_names[i]
             personality = random.choice(self.personalities)
-            treasury = self.config['starting_treasury'] + random.randint(-1000, 1000)
+            variant = int(self.config['starting_treasury'] * 0.6)
+            treasury = self.config['starting_treasury'] + random.randint(-variant, variant)
             organization = Organization(name, treasury, 0, None, None, personality)
             for t in self.territories:
                 if t.owner is None:

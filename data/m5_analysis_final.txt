@@ -1,0 +1,181 @@
+Running sensitivity analysis...
+
+Running scenarios...
+
+Running extreme conditions...
+
+----- Sensitivity Results -----
+--- num_orgs ---
+  value = 3
+    surviving_orgs: mean=2.87, standard deviation=0.35, min=2, max=3, confidence interval=[2.74, 2.99]
+    avg_treasury: mean=3071.22, standard deviation=1474.61, min=989.5, max=7428.5, confidence interval=[2543.54, 3598.9]
+    avg_heat: mean=38.94, standard deviation=9.04, min=22.67, max=54.0, confidence interval=[35.71, 42.18]
+    top_share: mean=0.46, standard deviation=0.09, min=0.33, max=0.75, confidence interval=[0.43, 0.5]
+  value = 5
+    surviving_orgs: mean=4.37, standard deviation=0.72, min=3, max=5, confidence interval=[4.11, 4.62]
+    avg_treasury: mean=3303.35, standard deviation=1059.16, min=1731.2, max=6634.0, confidence interval=[2924.34, 3682.37]
+    avg_heat: mean=42.37, standard deviation=9.34, min=24.5, max=63.8, confidence interval=[39.03, 45.72]
+    top_share: mean=0.35, standard deviation=0.07, min=0.25, max=0.5, confidence interval=[0.32, 0.37]
+  value = 6
+    surviving_orgs: mean=4.93, standard deviation=0.94, min=3, max=6, confidence interval=[4.6, 5.27]
+    avg_treasury: mean=2952.05, standard deviation=1175.98, min=1157.8, max=5911.6, confidence interval=[2531.24, 3372.87]
+    avg_heat: mean=43.19, standard deviation=6.9, min=33.4, max=60.5, confidence interval=[40.72, 45.66]
+    top_share: mean=0.32, standard deviation=0.06, min=0.25, max=0.45, confidence interval=[0.3, 0.34]
+  value = 7
+    surviving_orgs: mean=5.4, standard deviation=0.97, min=3, max=7, confidence interval=[5.05, 5.75]
+    avg_treasury: mean=2858.42, standard deviation=840.06, min=1624.17, max=4533.8, confidence interval=[2557.81, 3159.03]
+    avg_heat: mean=42.59, standard deviation=8.72, min=28.5, max=56.6, confidence interval=[39.47, 45.71]
+    top_share: mean=0.3, standard deviation=0.09, min=0.2, max=0.61, confidence interval=[0.26, 0.33]
+  value = 8
+    surviving_orgs: mean=6.4, standard deviation=0.93, min=4, max=8, confidence interval=[6.07, 6.73]
+    avg_treasury: mean=2503.5, standard deviation=701.94, min=1066.5, max=3864.86, confidence interval=[2252.31, 2754.69]
+    avg_heat: mean=41.97, standard deviation=7.55, min=30.33, max=56.43, confidence interval=[39.27, 44.67]
+    top_share: mean=0.26, standard deviation=0.05, min=0.2, max=0.4, confidence interval=[0.24, 0.28]
+--- starting_treasury ---
+  value = 500
+    surviving_orgs: mean=5.13, standard deviation=0.63, min=4, max=6, confidence interval=[4.91, 5.36]
+    avg_treasury: mean=1856.3, standard deviation=622.05, min=740.6, max=2929.2, confidence interval=[1633.71, 2078.9]
+    avg_heat: mean=41.26, standard deviation=10.42, min=15.83, max=56.67, confidence interval=[37.54, 44.99]
+    top_share: mean=0.32, standard deviation=0.06, min=0.25, max=0.45, confidence interval=[0.29, 0.34]
+  value = 1000
+    surviving_orgs: mean=5.3, standard deviation=0.75, min=4, max=6, confidence interval=[5.03, 5.57]
+    avg_treasury: mean=2291.14, standard deviation=622.95, min=1420.83, max=3391.0, confidence interval=[2068.22, 2514.06]
+    avg_heat: mean=40.27, standard deviation=9.08, min=27.67, max=62.0, confidence interval=[37.02, 43.52]
+    top_share: mean=0.29, standard deviation=0.05, min=0.2, max=0.41, confidence interval=[0.27, 0.31]
+  value = 2000
+    surviving_orgs: mean=5.03, standard deviation=0.76, min=3, max=6, confidence interval=[4.76, 5.31]
+    avg_treasury: mean=3020.08, standard deviation=1165.79, min=1116.33, max=5726.75, confidence interval=[2602.91, 3437.25]
+    avg_heat: mean=42.61, standard deviation=10.35, min=22.67, max=61.8, confidence interval=[38.91, 46.32]
+    top_share: mean=0.3, standard deviation=0.05, min=0.21, max=0.44, confidence interval=[0.29, 0.32]
+  value = 3500
+    surviving_orgs: mean=5.17, standard deviation=0.79, min=4, max=6, confidence interval=[4.88, 5.45]
+    avg_treasury: mean=4428.81, standard deviation=1256.78, min=2613.0, max=7929.25, confidence interval=[3979.07, 4878.54]
+    avg_heat: mean=44.55, standard deviation=8.66, min=33.5, max=61.5, confidence interval=[41.45, 47.65]
+    top_share: mean=0.31, standard deviation=0.06, min=0.2, max=0.47, confidence interval=[0.29, 0.33]
+  value = 5000
+    surviving_orgs: mean=5.2, standard deviation=0.85, min=3, max=6, confidence interval=[4.9, 5.5]
+    avg_treasury: mean=5970.08, standard deviation=1146.0, min=4144.4, max=8419.25, confidence interval=[5559.99, 6380.17]
+    avg_heat: mean=39.17, standard deviation=8.66, min=17.67, max=53.6, confidence interval=[36.07, 42.27]
+    top_share: mean=0.3, standard deviation=0.06, min=0.22, max=0.5, confidence interval=[0.28, 0.32]
+--- members_per_org ---
+  value = 2
+    surviving_orgs: mean=4.77, standard deviation=0.94, min=3, max=6, confidence interval=[4.43, 5.1]
+    avg_treasury: mean=3837.13, standard deviation=1005.46, min=1472.0, max=6071.0, confidence interval=[3477.33, 4196.93]
+    avg_heat: mean=43.63, standard deviation=9.18, min=31.8, max=67.25, confidence interval=[40.35, 46.92]
+    top_share: mean=0.32, standard deviation=0.06, min=0.21, max=0.45, confidence interval=[0.3, 0.34]
+  value = 4
+    surviving_orgs: mean=5.2, standard deviation=0.85, min=3, max=6, confidence interval=[4.9, 5.5]
+    avg_treasury: mean=2986.85, standard deviation=784.21, min=1752.83, max=4455.6, confidence interval=[2706.23, 3267.48]
+    avg_heat: mean=44.71, standard deviation=9.46, min=29.0, max=64.6, confidence interval=[41.32, 48.09]
+    top_share: mean=0.31, standard deviation=0.07, min=0.21, max=0.5, confidence interval=[0.29, 0.34]
+  value = 6
+    surviving_orgs: mean=5.33, standard deviation=0.66, min=4, max=6, confidence interval=[5.1, 5.57]
+    avg_treasury: mean=2801.39, standard deviation=791.55, min=1601.67, max=4869.8, confidence interval=[2518.13, 3084.64]
+    avg_heat: mean=42.34, standard deviation=9.05, min=26.33, max=60.5, confidence interval=[39.1, 45.58]
+    top_share: mean=0.31, standard deviation=0.06, min=0.2, max=0.47, confidence interval=[0.29, 0.34]
+  value = 8
+    surviving_orgs: mean=5.1, standard deviation=0.66, min=4, max=6, confidence interval=[4.86, 5.34]
+    avg_treasury: mean=1958.69, standard deviation=800.73, min=560.6, max=4448.4, confidence interval=[1672.15, 2245.23]
+    avg_heat: mean=38.98, standard deviation=11.47, min=20.8, max=73.25, confidence interval=[34.88, 43.08]
+    top_share: mean=0.31, standard deviation=0.05, min=0.2, max=0.42, confidence interval=[0.29, 0.33]
+  value = 10
+    surviving_orgs: mean=5.1, standard deviation=0.8, min=3, max=6, confidence interval=[4.81, 5.39]
+    avg_treasury: mean=1722.72, standard deviation=862.15, min=393.33, max=3577.25, confidence interval=[1414.2, 2031.23]
+    avg_heat: mean=40.63, standard deviation=8.44, min=19.6, max=56.2, confidence interval=[37.61, 43.66]
+    top_share: mean=0.3, standard deviation=0.06, min=0.23, max=0.47, confidence interval=[0.28, 0.32]
+--- num_territories ---
+  value = 8
+    surviving_orgs: mean=4.5, standard deviation=0.86, min=3, max=6, confidence interval=[4.19, 4.81]
+    avg_treasury: mean=2356.7, standard deviation=1229.05, min=303.17, max=5934.67, confidence interval=[1916.89, 2796.51]
+    avg_heat: mean=32.3, standard deviation=8.25, min=20.25, max=50.5, confidence interval=[29.35, 35.26]
+    top_share: mean=0.35, standard deviation=0.1, min=0.25, max=0.57, confidence interval=[0.31, 0.38]
+  value = 12
+    surviving_orgs: mean=4.63, standard deviation=0.81, min=3, max=6, confidence interval=[4.34, 4.92]
+    avg_treasury: mean=2708.07, standard deviation=1024.63, min=1052.0, max=4543.2, confidence interval=[2341.41, 3074.73]
+    avg_heat: mean=37.7, standard deviation=8.31, min=23.0, max=56.75, confidence interval=[34.72, 40.67]
+    top_share: mean=0.34, standard deviation=0.08, min=0.25, max=0.46, confidence interval=[0.32, 0.37]
+  value = 16
+    surviving_orgs: mean=5.23, standard deviation=0.77, min=4, max=6, confidence interval=[4.96, 5.51]
+    avg_treasury: mean=2942.24, standard deviation=888.15, min=1375.83, max=5113.25, confidence interval=[2624.41, 3260.06]
+    avg_heat: mean=37.6, standard deviation=10.37, min=14.5, max=64.0, confidence interval=[33.89, 41.31]
+    top_share: mean=0.31, standard deviation=0.06, min=0.21, max=0.44, confidence interval=[0.29, 0.33]
+  value = 20
+    surviving_orgs: mean=5.3, standard deviation=0.75, min=3, max=6, confidence interval=[5.03, 5.57]
+    avg_treasury: mean=2946.52, standard deviation=982.66, min=938.0, max=5108.8, confidence interval=[2594.88, 3298.16]
+    avg_heat: mean=41.59, standard deviation=10.04, min=16.5, max=55.17, confidence interval=[38.0, 45.18]
+    top_share: mean=0.29, standard deviation=0.06, min=0.2, max=0.4, confidence interval=[0.27, 0.31]
+--- raid_threshold ---
+  value = 30
+    surviving_orgs: mean=5.0, standard deviation=1.02, min=2, max=6, confidence interval=[4.64, 5.36]
+    avg_treasury: mean=2659.81, standard deviation=877.3, min=1171.5, max=4499.0, confidence interval=[2345.87, 2973.75]
+    avg_heat: mean=25.04, standard deviation=6.94, min=10.8, max=44.4, confidence interval=[22.56, 27.52]
+    top_share: mean=0.33, standard deviation=0.09, min=0.22, max=0.73, confidence interval=[0.3, 0.37]
+  value = 50
+    surviving_orgs: mean=5.0, standard deviation=0.95, min=3, max=6, confidence interval=[4.66, 5.34]
+    avg_treasury: mean=3103.62, standard deviation=1033.4, min=1080.0, max=4954.75, confidence interval=[2733.82, 3473.42]
+    avg_heat: mean=45.36, standard deviation=8.68, min=24.33, max=60.8, confidence interval=[42.25, 48.47]
+    top_share: mean=0.32, standard deviation=0.07, min=0.2, max=0.5, confidence interval=[0.29, 0.34]
+  value = 70
+    surviving_orgs: mean=5.4, standard deviation=0.62, min=4, max=6, confidence interval=[5.18, 5.62]
+    avg_treasury: mean=2953.82, standard deviation=872.06, min=1181.4, max=4980.75, confidence interval=[2641.76, 3265.88]
+    avg_heat: mean=51.27, standard deviation=11.44, min=28.0, max=74.0, confidence interval=[47.17, 55.36]
+    top_share: mean=0.3, standard deviation=0.06, min=0.21, max=0.45, confidence interval=[0.28, 0.33]
+  value = 90
+    surviving_orgs: mean=5.37, standard deviation=0.72, min=4, max=6, confidence interval=[5.11, 5.62]
+    avg_treasury: mean=3270.5, standard deviation=992.58, min=1582.83, max=5425.2, confidence interval=[2915.31, 3625.69]
+    avg_heat: mean=55.07, standard deviation=12.16, min=29.67, max=81.33, confidence interval=[50.72, 59.43]
+    top_share: mean=0.3, standard deviation=0.06, min=0.2, max=0.45, confidence interval=[0.28, 0.32]
+
+----- Scenario Results -----
+--- normal ---
+  surviving_orgs: mean=5.27, standard deviation=0.64, min=4, max=6, confidence interval=[5.04, 5.5]
+  avg_treasury: mean=3048.32, standard deviation=966.51, min=992.0, max=5132.0, confidence interval=[2702.46, 3394.18]
+  avg_heat: mean=41.97, standard deviation=9.53, min=26.2, max=61.8, confidence interval=[38.55, 45.38]
+  top_share: mean=0.3, standard deviation=0.06, min=0.21, max=0.45, confidence interval=[0.28, 0.32]
+--- crowded_but_poor ---
+  surviving_orgs: mean=5.27, standard deviation=1.14, min=3, max=7, confidence interval=[4.86, 5.68]
+  avg_treasury: mean=1319.7, standard deviation=567.9, min=546.33, max=2678.2, confidence interval=[1116.48, 1522.92]
+  avg_heat: mean=35.85, standard deviation=8.78, min=16.8, max=57.8, confidence interval=[32.71, 38.99]
+  top_share: mean=0.33, standard deviation=0.11, min=0.17, max=0.8, confidence interval=[0.29, 0.37]
+--- rich_but_sparse ---
+  surviving_orgs: mean=2.87, standard deviation=0.35, min=2, max=3, confidence interval=[2.74, 2.99]
+  avg_treasury: mean=5304.33, standard deviation=1957.27, min=1618.33, max=9714.5, confidence interval=[4603.93, 6004.73]
+  avg_heat: mean=46.58, standard deviation=13.13, min=14.5, max=71.0, confidence interval=[41.88, 51.28]
+  top_share: mean=0.47, standard deviation=0.09, min=0.35, max=0.67, confidence interval=[0.44, 0.5]
+--- police_state ---
+  surviving_orgs: mean=4.97, standard deviation=0.72, min=4, max=6, confidence interval=[4.71, 5.22]
+  avg_treasury: mean=2730.48, standard deviation=902.43, min=873.5, max=4406.2, confidence interval=[2407.55, 3053.42]
+  avg_heat: mean=28.65, standard deviation=7.38, min=16.5, max=46.25, confidence interval=[26.02, 31.29]
+  top_share: mean=0.31, standard deviation=0.06, min=0.2, max=0.43, confidence interval=[0.29, 0.33]
+
+----- Extreme Condition Results -----
+--- two_orgs ---
+  surviving_orgs: mean=1.97, standard deviation=0.18, min=1, max=2, confidence interval=[1.9, 2.03]
+  avg_treasury: mean=3325.12, standard deviation=1708.22, min=720.0, max=7608.0, confidence interval=[2713.84, 3936.39]
+  avg_heat: mean=34.12, standard deviation=11.47, min=7.5, max=58.0, confidence interval=[30.01, 38.22]
+  top_share: mean=0.6, standard deviation=0.11, min=0.5, max=1.0, confidence interval=[0.56, 0.65]
+--- max_orgs_crowded ---
+  surviving_orgs: mean=4.73, standard deviation=1.17, min=3, max=7, confidence interval=[4.31, 5.15]
+  avg_treasury: mean=2386.7, standard deviation=1197.17, min=185.33, max=5650.0, confidence interval=[1958.29, 2815.1]
+  avg_heat: mean=32.19, standard deviation=10.49, min=14.57, max=54.33, confidence interval=[28.44, 35.94]
+  top_share: mean=0.34, standard deviation=0.09, min=0.25, max=0.5, confidence interval=[0.3, 0.37]
+--- no_police ---
+  surviving_orgs: mean=5.3, standard deviation=0.65, min=4, max=6, confidence interval=[5.07, 5.53]
+  avg_treasury: mean=3618.27, standard deviation=1034.21, min=1458.8, max=5295.0, confidence interval=[3248.19, 3988.36]
+  avg_heat: mean=60.34, standard deviation=11.26, min=37.0, max=81.17, confidence interval=[56.31, 64.37]
+  top_share: mean=0.29, standard deviation=0.05, min=0.25, max=0.4, confidence interval=[0.28, 0.31]
+--- maximum_police ---
+  surviving_orgs: mean=3.83, standard deviation=1.21, min=1, max=6, confidence interval=[3.4, 4.26]
+  avg_treasury: mean=2026.23, standard deviation=976.75, min=400.0, max=4012.5, confidence interval=[1676.7, 2375.76]
+  avg_heat: mean=9.57, standard deviation=6.02, min=1.0, max=21.6, confidence interval=[7.42, 11.72]
+  top_share: mean=0.42, standard deviation=0.16, min=0.21, max=1.0, confidence interval=[0.36, 0.48]
+--- long_run ---
+  surviving_orgs: mean=3.5, standard deviation=0.94, min=2, max=5, confidence interval=[3.16, 3.84]
+  avg_treasury: mean=12870.15, standard deviation=4458.48, min=6180.5, max=27448.5, confidence interval=[11274.7, 14465.6]
+  avg_heat: mean=46.74, standard deviation=8.0, min=35.33, max=71.5, confidence interval=[43.88, 49.61]
+  top_share: mean=0.43, standard deviation=0.11, min=0.3, max=0.67, confidence interval=[0.39, 0.47]
+--- very_long_run ---
+  surviving_orgs: mean=2.53, standard deviation=1.01, min=1, max=5, confidence interval=[2.17, 2.89]
+  avg_treasury: mean=46299.32, standard deviation=12719.28, min=28923.5, max=80571.0, confidence interval=[41747.78, 50850.86]
+  avg_heat: mean=43.44, standard deviation=7.65, min=27.5, max=58.0, confidence interval=[40.7, 46.17]
+  top_share: mean=0.6, standard deviation=0.21, min=0.35, max=1.0, confidence interval=[0.53, 0.68]

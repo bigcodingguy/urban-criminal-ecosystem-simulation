@@ -1,0 +1,121 @@
+Week,Organization,Treasury,Members,Territories,Heat,Active
+0,Peaky Blinders,339,5,1,0,True
+0,Solomons' Bakery,1426,6,1,0,True
+0,Backstreet Boys,31,5,1,0,True
+0,Sabini's Gang,41,5,2,0,True
+0,The Iron Hand,29,6,1,0,True
+0,Kimber's Boys,1446,6,1,0,True
+1,Peaky Blinders,349,5,1,0,True
+1,Solomons' Bakery,1417,6,1,0,True
+1,Backstreet Boys,118,5,1,0,True
+1,Sabini's Gang,74,4,3,0,True
+1,The Iron Hand,45,6,1,0,True
+1,Kimber's Boys,1438,7,1,0,True
+2,Peaky Blinders,421,5,2,0,True
+2,Solomons' Bakery,1408,6,1,0,True
+2,Backstreet Boys,205,5,1,0,True
+2,Sabini's Gang,117,4,4,0,True
+2,The Iron Hand,61,6,1,0,True
+2,Kimber's Boys,1420,8,1,0,True
+3,Peaky Blinders,493,5,2,0,True
+3,Solomons' Bakery,1399,7,1,0,True
+3,Backstreet Boys,292,5,1,0,True
+3,Sabini's Gang,160,4,5,0,True
+3,The Iron Hand,77,6,1,0,True
+3,Kimber's Boys,1392,8,2,0,True
+4,Peaky Blinders,565,5,2,0,True
+4,Solomons' Bakery,1380,7,1,0,True
+4,Backstreet Boys,379,5,1,0,True
+4,Sabini's Gang,203,4,5,0,True
+4,The Iron Hand,93,6,1,0,True
+4,Kimber's Boys,1364,8,3,0,True
+5,Peaky Blinders,698,6,2,0,True
+5,Solomons' Bakery,1361,7,1,0,True
+5,Backstreet Boys,466,5,2,0,True
+5,Sabini's Gang,246,5,5,0,True
+5,The Iron Hand,109,6,2,0,True
+5,Kimber's Boys,1336,9,3,0,True
+6,Peaky Blinders,821,6,3,0,True
+6,Solomons' Bakery,1342,7,1,0,True
+6,Backstreet Boys,553,5,3,0,True
+6,Sabini's Gang,279,6,5,0,True
+6,The Iron Hand,125,6,3,0,True
+6,Kimber's Boys,1298,9,4,0,True
+7,Peaky Blinders,944,6,3,0,True
+7,Solomons' Bakery,1323,6,1,0,True
+7,Backstreet Boys,640,4,3,0,True
+7,Sabini's Gang,302,5,5,0,True
+7,The Iron Hand,141,5,3,0,True
+7,Kimber's Boys,1260,10,4,0,True
+8,Peaky Blinders,1067,6,3,0,True
+8,Solomons' Bakery,1404,7,1,0,True
+8,Backstreet Boys,737,4,4,0,True
+8,Sabini's Gang,335,5,5,0,True
+8,The Iron Hand,167,5,3,0,True
+8,Kimber's Boys,1212,10,4,0,True
+9,Peaky Blinders,1190,6,3,0,True
+9,Solomons' Bakery,1475,7,1,0,True
+9,Backstreet Boys,834,4,4,0,True
+9,Sabini's Gang,368,5,5,0,True
+9,The Iron Hand,193,5,3,0,True
+9,Kimber's Boys,1164,10,4,0,True
+10,Peaky Blinders,1365,7,3,0,True
+10,Solomons' Bakery,1546,6,1,0,True
+10,Backstreet Boys,999,4,4,0,True
+10,Sabini's Gang,401,4,4,0,True
+10,The Iron Hand,219,5,3,0,True
+10,Kimber's Boys,1116,10,5,0,True
+11,Peaky Blinders,1530,8,3,0,True
+11,Solomons' Bakery,1627,6,2,0,True
+11,Backstreet Boys,1164,4,4,0,True
+11,Sabini's Gang,444,4,4,0,True
+11,The Iron Hand,245,3,2,0,True
+11,Kimber's Boys,1068,10,5,0,True
+12,Peaky Blinders,1685,8,3,0,True
+12,Solomons' Bakery,1708,5,2,0,True
+12,Backstreet Boys,1397,4,4,0,True
+12,Sabini's Gang,487,1,4,0,True
+12,The Iron Hand,291,3,2,0,True
+12,Kimber's Boys,1020,10,5,0,True
+13,Peaky Blinders,1901,8,4,0,True
+13,Solomons' Bakery,1799,4,2,0,True
+13,Backstreet Boys,1630,4,4,0,True
+13,Sabini's Gang,560,2,4,0,True
+13,The Iron Hand,337,2,1,0,True
+13,Kimber's Boys,972,11,5,0,True
+14,Peaky Blinders,2117,8,4,0,True
+14,Solomons' Bakery,2293,3,3,0,True
+14,Backstreet Boys,1915,4,4,0,True
+14,Sabini's Gang,623,2,4,0,True
+14,The Iron Hand,0,0,0,0,False
+14,Kimber's Boys,914,11,5,0,True
+15,Peaky Blinders,2386,8,4,0,True
+15,Solomons' Bakery,2404,3,3,0,True
+15,Backstreet Boys,2264,4,4,0,True
+15,Sabini's Gang,739,2,4,0,True
+15,The Iron Hand,0,0,0,0,False
+15,Kimber's Boys,856,11,5,0,True
+16,Peaky Blinders,2655,8,4,0,True
+16,Solomons' Bakery,2515,3,3,0,True
+16,Backstreet Boys,2613,5,4,0,True
+16,Sabini's Gang,855,3,4,0,True
+16,The Iron Hand,0,0,0,0,False
+16,Kimber's Boys,871,12,5,0,True
+17,Peaky Blinders,2924,8,4,0,True
+17,Solomons' Bakery,2700,3,3,0,True
+17,Backstreet Boys,2952,6,4,0,True
+17,Sabini's Gang,961,4,4,0,True
+17,The Iron Hand,0,0,0,0,False
+17,Kimber's Boys,876,13,5,0,True
+18,Peaky Blinders,3253,8,4,0,True
+18,Solomons' Bakery,2885,3,3,0,True
+18,Backstreet Boys,3281,5,4,0,True
+18,Sabini's Gang,1057,3,4,0,True
+18,The Iron Hand,0,0,0,0,False
+18,Kimber's Boys,871,12,5,0,True
+19,Peaky Blinders,3582,8,4,0,True
+19,Solomons' Bakery,3070,3,3,0,True
+19,Backstreet Boys,3620,3,4,0,True
+19,Sabini's Gang,1163,4,4,0,True
+19,The Iron Hand,0,0,0,0,False
+19,Kimber's Boys,876,12,5,0,True
