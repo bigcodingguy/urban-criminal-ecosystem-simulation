@@ -133,29 +133,64 @@ class Simulation:
                         break
             
             elif action == "Recruit":
-                name = random.choice(self.member_names)
-                skill = random.randint(30, 70)
-                loyalty = random.randint(40, 80)
-                new_member = Member(name, skill, loyalty, "Bruiser")
-                organization.recruit_members([new_member])
-                if self.print:
-                    print(f"Recruitment: {organization.name} recruits new member {new_member.name}!")
+                if organization.treasury >= 700:
+                    cost = 700
+                    name = random.choice(self.member_names)
+                    skill = random.randint(50, 90)
+                    loyalty = random.randint(60, 95)
+                    role = random.choice(self.member_types)
+                    new_member = Member(name, skill, loyalty, role)
+                    organization.treasury -= cost
+                    organization.recruit_members([new_member])
+                    if self.print:
+                        print(f"Recruitment: {organization.name} hires elite operator {new_member.name}!")
+                elif organization.treasury >= 250:
+                    cost = 250
+                    name = random.choice(self.member_names)
+                    skill = random.randint(30, 70)
+                    loyalty = random.randint(40, 80)
+                    new_member = Member(name, skill, loyalty, "Bruiser")
+                    organization.treasury -= cost
+                    organization.recruit_members([new_member])
+                    if self.print:
+                        print(f"Recruitment: {organization.name} recruits new member {new_member.name}!")
+                else:
+                    cost = 50
+                    name = random.choice(self.member_names)
+                    skill = random.randint(20, 50)
+                    loyalty = random.randint(30, 60)
+                    new_member = Member(name, skill, loyalty, "Bruiser")
+                    organization.treasury -= cost
+                    organization.recruit_members([new_member])
+                    if self.print:
+                        print(f"Recruitment: {organization.name} picks up gutter dog {new_member.name} from the streets.")
 
             elif action == "Establish":
                 type = random.choice(["Protection", "Gambling", "Smuggling"])
-                income = random.randint(50, 90)
-                heat = random.randint(1, 3)
-                new_racket = Racket(type, income, heat)
-                organization.rackets.append(new_racket)
-                if new_racket.type == "Protection":
-                    organization.calculate_heat_delta(4)
-                elif new_racket.type == "Gambling":
-                    organization.calculate_heat_delta(7)
-                elif new_racket.type == "Smuggling":
-                    organization.calculate_heat_delta(10)
-                if self.print:
-                    print(f"Growth: {organization.name} establishes new {new_racket.type} racket!")
-            
+                if type == "Protection":
+                    cost = 150
+                elif type == "Gambling":
+                    cost = 300
+                elif type == "Smuggling":
+                    cost = 500
+                if organization.treasury >= cost:
+                    organization.treasury -= cost
+                    income = random.randint(50, 90)
+                    heat = random.randint(1, 3)
+                    new_racket = Racket(type, income, heat)
+                    organization.rackets.append(new_racket)
+                    if new_racket.type == "Protection":
+                        organization.calculate_heat_delta(4)
+                    elif new_racket.type == "Gambling":
+                        organization.calculate_heat_delta(7)
+                    elif new_racket.type == "Smuggling":
+                        organization.calculate_heat_delta(10)
+                    if self.print:
+                        print(f"Growth: {organization.name} establishes new {new_racket.type} racket!")
+                else:
+                    if self.print:
+                        print(f"Growth: {organization.name} attempts to establish a {type} racket but lacks the capital.")
+
             elif action == "Negotiate":
                 target = None
                 for rel in self.relationships:
@@ -229,8 +264,8 @@ class Simulation:
                             target = random.choice(organization.rackets)
                             organization.rackets.remove(target)
                     
-                    assets_seized = int(organization.treasury * 0.1)
-                    organization.treasury = organization.treasury - assets_seized
+                    assets_seized = max(int(organization.treasury * 0.15), 200)
+                    organization.treasury = max(0, organization.treasury - assets_seized)
                     organization.calculate_heat_delta(-30)
                     if category == 'territory':
                         if self.print:

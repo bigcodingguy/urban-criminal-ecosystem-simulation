@@ -19,17 +19,23 @@ class Organization:
     def collect_income(self):
         for racket in self.rackets:
             self.treasury += racket.calculate_income()
+        for territory in self.territories:
+            self.treasury += int(territory.income_value * (territory.control_requirement / 2) * 0.3)
         return self.treasury
     
     def pay_expenses(self):
-        total_cost = 0
-        for member in self.members:
-            total_cost += member.wage
-        if self.treasury >= total_cost:
-            self.treasury -= total_cost
-        else:
-            # TODO: Can't pay expenses
-            pass
+        sorted_members = sorted(self.members, key=lambda m: m.skill, reverse=True)
+        money_left = self.treasury
+        unpaid_members = 0
+        for member in sorted_members:
+            if money_left >= member.wage:
+                money_left -= member.wage
+            else:
+                member.update_loyalty(-10)
+                unpaid_members += 1
+        if unpaid_members > 0:
+            print(f"{self.name} skipped {unpaid_members} paychecks this week. Loyalty wavers.")
+        self.treasury = money_left
     
     def recruit_members(self, new_members):
         for member in new_members:
@@ -69,4 +75,5 @@ class Organization:
         self.territories.clear()
         self.members.clear()
         self.rackets.clear()
+        self.treasury = 0
         self.is_active = False
