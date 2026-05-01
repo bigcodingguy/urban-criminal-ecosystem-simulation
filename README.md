@@ -6,43 +6,43 @@ A discrete-time, agent-based simulation of territorial competition between crimi
 
 # Overview
 
-This simulation models 6-8 autonomous organizations competing for control of approximately 60 street-level territories and high-value key assets. Organizations make reasoned decisions about expansion, recruitment, rackets, and inter-organizational relations while managing law enforcement "heat".
-
-# Project Status
-
-- Entity classes Member, Territory, Organization, Racket, Relationship
-- Markov chain transition system for relationship dynamics
-- Weighted stochastic decision model for AI behavior
-- Basic simulation loop running weekly cycles with action and relationship components
-
-# To do
-
-- Combat resolution system
-- Event system
-- Full five-phase weekly loop
-- Interactive player mode
-- Economy, intel phases
-- Member allocation across territories
-- Police raids
-- City map
-- Racket (key asset) multipliers
-- Data visualization
-
-# Changes from M1
-
-- Simplified initial setup with basic simulation loop and only 3 starting organizations.
-- Changed 'is_alive', 'is_arrested', 'experience', 'stationed_at' to defaults instead of required "Member" parameters.
-- Dropped 'is_at_war' method from "Relationship", given 'state' captures it.
-- Instead of "Racket" determining its own operational status, made 'is_operational' a simple boolean flag.
-- Changed 'members' and 'territories' to empty lists in "Organization" instead of required parameters.
+This simulation models autonomous organizations competing for control of a shared environment. Organizations make weekly decisions about expansion, recruitment, rackets, and inter-organizational relations while managing law enforcement "heat".
 
 # Installation
 
 - Python 3 required
 - No external dependencies
-- To test: clone repo, run python src/main.py
+- git clone https://github.com/bigcodingguy/urban-criminal-ecosystem-simulation.git
+
+# Usage
+
+### Running named scenarios and extreme conditions for visualization
+
+python src/main.py
+python src/visualize.py
+
+This produces per-run CSVs and PNGs in 'data/' for the four named scenarios plus six extreme conditions.
+
+### Running statistical analysis
+
+python src/analysis.py
+
+This runs ~990 simulations including sensitivity analysis, scenarios, and extreme conditions. Produces a six plot sensitivity grid and prints aggregate statistics to terminal.
+
+## Configuration
+
+Baseline and scenario parameters are defined in 'src/main.py' and 'src/analysis.py'. Edit the dictionaries at the top of either file to change values. Parameters include:
+
+- 'num_orgs': number of competing organizations
+- 'num_territories': number of territories in the system
+- 'members_per_org': starting members per organization.
+- 'starting_treasury': initial treasury (variable +- 60%)
+- 'raid_threshold': heat threshold above which raids may trigger
+- 'member_wage': weekly wage per member
+- 'num_weeks': simulation duration in weeks
 
 # Project Structure
+
 ```
 src/
   models/
@@ -56,7 +56,16 @@ src/
     ai_decision_engine.py
   simulation.py
   main.py
+  analysis.py
+  visualize.py
 ```
+
+## Output Files
+
+- 'data/run\*\_.csv': per-week state for each run
+- 'data/run*\_treasury.png', 'data/run_members.png', 'data/run*\_\_territories.png': visualizations
+- 'data/sensitivity_plot.png': six subplot sensitivity grid
+- 'data/m5_analysis_final.txt': analysis.py aggregate statistics
 
 # Acknowledgement
 
