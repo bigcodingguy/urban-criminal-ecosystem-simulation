@@ -1,5 +1,12 @@
 from simulation import Simulation
 
+""" For running all scenarios will per-week CSV logging.
+
+Defines and runs ten configurations: four named scenarios and six extreme conditions.
+Each run produces a CSV in data/ for visualization by visualize.py.
+
+"""
+
 baseline = {
     'num_territories': 20,
     'num_orgs': 6,

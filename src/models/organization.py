@@ -2,6 +2,17 @@ from models.member import Member
 from models.territory import Territory
 from models.racket import Racket
 
+""" Organization class representing a single gang in the simulation.
+
+Each organization has a name, treasury, heat level, member roster,
+and set of territories and rackets. This file provides methods for
+collecting income each week (based on territories and rackets),
+paying expenses (i.e. member wages), recruiting new members,
+adjusting heat, and an elimination check for those with zero
+territories or members.
+
+"""
+
 class Organization:
     def __init__(self, name, treasury, heat, hq, leader, personality):
         self.name = name

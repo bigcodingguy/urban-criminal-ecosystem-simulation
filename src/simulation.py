@@ -9,6 +9,17 @@ from systems.combat_resolver import resolve_combat
 import random
 import csv
 
+""" Discrete-time agent-based simulation of an urban criminal ecosystem.
+
+This class runs a weekly loop in which organizations compete for territory
+across a number of weeks. Each week includes four phases: income collection
+and wage payment, action selection and resolution, relationship updates, and
+consequences including raids and eliminations. Configurable and supports both
+printing and CSV logging.
+
+
+"""
+
 class Simulation:
     def __init__(self, config, run_id, log_csv=True, print=True):
         self.config = config

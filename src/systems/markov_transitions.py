@@ -1,6 +1,11 @@
 import random
 from models.relationship import Relationship
 
+""" Markov chain state transitions for inter-organizational relationships.
+
+A function that, given a current relationship state and a pressure value,
+returns a new state via a probability matrix biased toward adjacent state changes.
+"""
 states = ['Alliance', 'Friendly', 'Neutral', 'Tense', 'Hostile', 'War']
 
 def markov_transition(current_state, event_pressure):
@@ -37,6 +42,8 @@ def markov_transition(current_state, event_pressure):
     elif event_pressure < 0:
         worsen += 0.05
         improve -= 0.05
+    
+    # Update logic
     
     roll = random.random()
     index = states.index(current_state)

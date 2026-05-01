@@ -4,6 +4,15 @@ import csv
 import math
 import matplotlib.pyplot as plt
 
+""" Statistical analysis for sensitivity analysis, scenarios, and extreme condition tests.
+
+Runs ~990 simulations across five parameters (five values each), four named scenarios,
+and six extreme condition tests, all 30 runs each. Aggregates results into mean,
+standard deviation, min, max, and 95% confidence interval for four metrics (surviving_orgs,
+avg_treasury, avg_heat, top_share) and prints to terminal. Generates a six-subplot grid.
+
+"""
+
 num_runs = 30
 
 baseline = {

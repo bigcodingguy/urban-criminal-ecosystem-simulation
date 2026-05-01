@@ -62,8 +62,8 @@ src/
 
 ## Output Files
 
-- 'data/run\*\_.csv': per-week state for each run
-- 'data/run*\_treasury.png', 'data/run_members.png', 'data/run*\_\_territories.png': visualizations
+- 'data/run\_\*\.csv': per-week state for each run
+- 'data/run\_\*\_treasury.png', 'data/run\_\*\_members.png', 'data/run\_\*\_territories.png': visualizations
 - 'data/sensitivity_plot.png': six subplot sensitivity grid
 - 'data/m5_analysis_final.txt': analysis.py aggregate statistics
 

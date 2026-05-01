@@ -1,5 +1,14 @@
 import random
 
+""" Member class representing an individual in an organization.
+
+Each member has a name, skill level, loyalty level, role, and wage,
+along with checks for if they're alive or arrested. This file provides
+methods for updating member loyalty and checking for betrayal, which
+becomes more likely as loyalty decreases.
+
+"""
+
 class Member:
     def __init__(self, name, skill, loyalty, role):
         self.name = name

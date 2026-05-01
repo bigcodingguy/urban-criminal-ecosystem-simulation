@@ -3,6 +3,15 @@ from models.organization import Organization
 from models.member import Member
 from models.territory import Territory
 
+""" Lanchester-based probabilistic conflict resolution between two organizations.
+
+Computes attacker and defender forces as a sum of per-member strength (skill + loyalty + random variant),
+with a 1.5x multiplier for defenders. The winner is determined probabilistically and casualties are
+assigned based on per-member rolls impacted by skill and the difference in force. If an attack is
+successful, a territory is transferred from loser to winner.
+
+"""
+
 def calculate_force(organization, modifier):
     total = 0
     for member in organization.members:

@@ -1,3 +1,12 @@
+""" Racket class representing a profitable criminal operation.
+
+Rackets come in three types (Protection, Gambling, Smuggling),
+each with different income, heat generation, and startup costs.
+Organiations establish rackets through the Establish action when
+they can afford the expense.
+
+"""
+
 class Racket:
     def __init__(self, type, base_income, heat_generated):
         self.type = type

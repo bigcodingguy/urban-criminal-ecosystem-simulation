@@ -1,3 +1,11 @@
+""" Relationship class tracking the relational state between two organizations.
+
+Each relationship pairs two organizations and maintains a current state
+between them, spanning Alliance to War, plus a history of all historical states.
+Updates are made via Markov transitions in the simulation loop.
+
+"""
+
 class Relationship:
     def __init__(self, org_a, org_b, state):
         self.org_a = org_a

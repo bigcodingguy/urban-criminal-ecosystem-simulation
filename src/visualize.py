@@ -1,6 +1,14 @@
 import csv
 import matplotlib.pyplot as plt
 
+""" Per-run figure generator for named scenarios.
+
+Reads per-week CSVs produced by main.py and generates three figures
+per run (treasury, member count, territory count over time), one
+line per organization. Output is saved as PNGs in data/
+
+"""
+
 run_names = {
     1: 'Baseline',
     2: 'Crowded but Poor',

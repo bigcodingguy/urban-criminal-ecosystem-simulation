@@ -1,3 +1,12 @@
+""" Territory class representing a single ownable area in the simulation.
+
+Each territory has a name, asset subtype, income value, heat profile,
+control requirement, and owner. Territories generate income proportional
+to their control requirement, reflecting the idea that harder-to-hold
+locations are more valuable.
+
+"""
+
 class Territory:
     def __init__(self, name, asset_subtype, income_value, heat_profile, control_requirement, visibility_type, neighborhood):
         self.name = name
